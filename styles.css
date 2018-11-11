@@ -177,7 +177,7 @@ h5 {
     height: 70%;
     display: flex;
     flex-direction: column;
-    font-size: 1.2em;
+    font-size: 0em;
     justify-content: center;
     text-align: center;
 }
@@ -194,14 +194,14 @@ h5 {
     background-position: center;
 }
 
+.beerbox-photo-info {
+    margin: 10%;
+}
+
 .beerbox-photo:active {
     font-size: 1.2em;
     background-image: none;
-    background-color: rgba(255, 255, 255, 0.8)
-}
-
-.beerbox-photo-info {
-    margin: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .beerbox-info {
