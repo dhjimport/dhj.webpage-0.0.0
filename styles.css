@@ -1,0 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'K2D', sans-serif;
+}
+
+header {
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    margin: 0px auto 0px auto;
+    background-image: url('stuff/header.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.header-box-quote {
+    background-color: rgba(138, 128, 128, 0.4);
+    width: 100%;
+    display: flex;
+}
+
+.header-box-quote > p {
+    padding: 14%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.header-box-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-box-buttons > button {
+    width: 200px;
+    height: 75px;
+    font-size: 2em;
+    color: white;
+    background-color: rgba(138, 128, 128, 0.6);
+    border: solid 2px white;
+}
+
+@media screen and (max-width: 860px) {
+    .header-box-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-box-buttons > button {
+        margin-bottom: 10px;
+    }
+}
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    background-color:#EEEBD9;
+    height: auto;
+    margin: 0px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-left: 5vh;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-left: 5vh;
+    font-weight: bold;
+}
+
+.merch {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+    .merch {
+        flex-direction: column;
+    }
+  }
+
+
+
+.beerbox {
+    width: 30%;
+    min-width: 300px;
+    height: 70vh;
+    max-height: 500px;
+    margin: 2% auto 2% auto;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid rgb(57, 60, 61);
+    border-radius: 12%;
+    overflow: hidden;
+}
+
+.beerbox-photo {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    justify-content: center;
+    text-align: center;
+}
+
+.first.beerbox-photo {
+    background-image: url('stuff/gayhorse.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.second.beerbox-photo {
+    background-image: url('stuff/teamfreedom.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.beerbox-photo:active {
+    font-size: 1.2em;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.beerbox-photo-info {
+    margin: 10%;
+}
+
+.beerbox-info {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.beerbox-info-name {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.beerbox-info-type {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.beerbox-info-vol {
+    text-align: center;
+}
+
+.contact-info {
+    width: 100%;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info-quote {
+    margin: 5%;
+    text-align: center;
+    color: white;
+}
+
+.contact-info-container {
+    width: auto;
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info-container {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+  }
+
+.contact-logo {
+    width: 265px;
+    height: 110px;
+    background-color: black;
+    display: flex;
+}
+
+.contact-logo > p {
+    font-size: 3em;
+    font-family: 'Leckerli One', cursive;
+    color: white;
+    margin: auto;
+}
+
+.contact-info-list {
+    width: 50%;
+    margin: 5%;
+    color: white;
+}
+
+dl {
+    padding-left: 10%;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.info {
+    background-color: #423F3F
+}
